@@ -5,7 +5,8 @@ import { Slot } from '@radix-ui/react-slot'
 export interface ITextProps {
   size?: 'sm' | 'md' | 'lg',
   children: ReactNode,
-  asChild?: boolean
+  asChild?: boolean,
+  className?: string
 }
 
 export function Text({ size = 'md', ...props }: ITextProps) {
@@ -19,7 +20,8 @@ export function Text({ size = 'md', ...props }: ITextProps) {
             'text-xs': size === 'sm',
             'text-sm': size === 'md',
             'text-md': size === 'lg'
-          }
+          },
+          props.className
         )
       }
     >

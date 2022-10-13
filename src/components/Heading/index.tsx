@@ -5,7 +5,8 @@ import { Slot } from '@radix-ui/react-slot'
 export interface IHeadingProps {
   size?: 'sm' | 'md' | 'lg',
   children: ReactNode,
-  asChild?: boolean
+  asChild?: boolean,
+  className?: string
 }
 
 export function Heading({ size = 'md', ...props }: IHeadingProps) {
@@ -19,7 +20,8 @@ export function Heading({ size = 'md', ...props }: IHeadingProps) {
             'text-lg': size === 'sm',
             'text-xl': size === 'md',
             'text-2xl': size === 'lg'
-          }
+          },
+          props.className
         )
       }
     >

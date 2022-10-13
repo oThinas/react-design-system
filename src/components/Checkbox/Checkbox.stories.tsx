@@ -13,11 +13,11 @@ export default {
       return(
         <div className='flex items-center gap-2'>
           {Story()}
-          <Text size='sm'>
-            <label htmlFor='remember-me'>
+          <label htmlFor='remember-me'>
+            <Text size='sm'>
               Lembrar de mim
-            </label>
-          </Text>
+            </Text>
+          </label>
         </div>
       )
     }
