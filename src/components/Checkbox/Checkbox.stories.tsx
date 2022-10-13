@@ -14,7 +14,9 @@ export default {
         <div className='flex items-center gap-2'>
           {Story()}
           <Text size='sm'>
-            Lembrar de mim
+            <label htmlFor='remember-me'>
+              Lembrar de mim
+            </label>
           </Text>
         </div>
       )
